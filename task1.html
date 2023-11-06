@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Float Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 60%;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+
+      .block {
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .green {
+        background: #51cf66;
+        width: 30%;
+        height: 90%;
+      }
+
+      .blue {
+        background: #339af0;
+        width: 70%;
+        height: 10%;
+      }
+
+      .yellow {
+        background: yellow;
+        width: 40%;
+        height: 80%;
+      }
+
+      .purple {
+        background: purple;
+        width: 30%;
+        height: 90%;
+        float: right;
+      }
+
+      .orange {
+        background: orange;
+        width: 70%;
+        height: 10%;
+        clear: left;
+        float: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="block green">IMG</div>
+      <div class="block blue">TEXT</div>
+      <div class="block yellow">IMG</div>
+      <div class="block purple">TEXT</div>
+      <div class="block orange">TEXT</div>
+    </div>
+  </body>
+</html>
